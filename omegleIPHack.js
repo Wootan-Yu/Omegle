@@ -28,6 +28,7 @@ let getLocation = async (ip) => {
         response.json().then((json) => {
             const output = `
 -------------------------------
+BASIC INFO
 IP: ${ip}
 Country: ${json.country_name}
 State: ${json.state_prov}
@@ -35,7 +36,6 @@ City: ${json.city}
 District: ${json.district}
 Lat / Long: (${json.latitude}, ${json.longitude})
 -------------------------------
-by L14 :)
           `;
             console.log(output);
         })
